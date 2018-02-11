@@ -1,19 +1,18 @@
-body
+html, body
     margin: 0
     padding: 0
+    height: 100%
+    scroll-behavior: smooth
 
-.app
+.App
     font:
         family: 'Poppins', sans-serif !important
     position: relative
     overflow-x: hidden
 
-#check-toggle
-    position: absolute
-    left: -9999px
-
 #toggle-label 
-    position: absolute
+    position: fixed
+    z-index: 100
     top: 30px
     right: 38px
     display: block 
@@ -29,7 +28,7 @@ body
     margin-bottom: 4px
     background: linear-gradient(to right, #ccc, #aaa)
     transition-duration: 0.3s
-    transform-origin: center
+    outline: 1px solid grey
 
 #toggle:after,
 #toggle:before 
@@ -37,25 +36,23 @@ body
     position: relative
     top: 6px
 
-#check-toggle:checked ~ #nav > li 
-    right: 10px
+.appear
+    right: 10px !important
 
-
-#check-toggle:checked ~ #toggle-label #toggle 
+.rotate #toggle 
     transform: rotate(45deg)
-    position: relative
     top: 4px
 
-#check-toggle:checked ~ #toggle-label #toggle:before 
+.rotate #toggle:before 
     transform: rotate(90deg)
     top: 0
 
-
-#check-toggle:checked ~ #toggle-label #toggle:after 
+.rotate #toggle:after 
     top: -6px
 
 #nav 
-    position: absolute
+    position: fixed
+    z-index: 90
     top: 100px
     right: 0
     margin: 0
@@ -93,7 +90,7 @@ body
         display: block
         margin-top: -40px
         position: relative
-        right: -100px
+        right: -30vw
 
 #nav li:first-of-type 
     transition-duration: 0.1s
@@ -126,6 +123,7 @@ body
 .banner 
     background: url(../../images/guitar.jpg) no-repeat center
     background-size: cover
+    background-attachment: fixed
 
     .overlay 
         height: 100vh
@@ -141,12 +139,14 @@ body
 
         h1 
             font-size: 50pt
-            margin-top: 30vh
+            margin-top: 25vh
             letter-spacing: 4px
+            margin-bottom: 0
 
         p 
             font-size: 19pt
             letter-spacing: 1px
+            margin: 0
 
 .wrapper 
     max-width: 1080px
