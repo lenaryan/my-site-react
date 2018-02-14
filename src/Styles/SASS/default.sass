@@ -9,6 +9,14 @@ html, body
         family: 'Poppins', sans-serif !important
     position: relative
     overflow-x: hidden
+    color: peachpuff
+    background: url(../../images/guitar.jpg) no-repeat center
+        size: cover
+        attachment: fixed
+
+    .home
+        height: 100% 
+        background: linear-gradient(to right, rgba(0,0,0,0.85),rgba(0,0,0,0.75),rgba(0,0,0,0.85))
 
 #toggle-label 
     position: fixed
@@ -120,14 +128,9 @@ html, body
     a 
         background: url(../../images/violet.png) no-repeat center
 
-.banner 
-    background: url(../../images/guitar.jpg) no-repeat center
-    background-size: cover
-    background-attachment: fixed
-
+.banner
     .overlay 
-        height: 100vh
-        background-color: rgba(0, 0, 0, 0.7)
+        height: 101vh
         color: white 
         text-align: center
 
@@ -154,31 +157,74 @@ html, body
 
     .block-info 
         display: flex
-        justify-content: space-between
-        margin: 40px 0
+        justify-content: center
+        margin: 3px auto
+        flex-flow: column
+        align-items: center
+        width: 70%
+        padding: 40px 30px 30px
+        border-top: 1px solid lightgrey
+        border-bottom: 1px solid lightgrey
 
         .color 
-            width: 40%
+            width: 50%
+            height: 100px;
             color: white
             text-shadow: 0 0 2px black
             text-transform: uppercase
-            font-size: 30pt
+            font-size: 28pt
             display: flex
             justify-content: center
             align-items: center
+            background: #777
+            transition: all 0.2s ease-in-out
 
-        #works 
+        a
+            text-transform: lowercase
+            text-decoration: none
+            color: peachpuff
+            text-shadow: 0 0 1px black
+            transition: all 0.2s ease-in-out
+            font:
+                weight: 600
+                size: 18pt
+            margin-top: 15px
+            padding: 3px 10px
+
+        &:hover #works 
             background: #0a995c
 
-        #arts 
+        &:hover #arts 
             background: #10ff12
 
-        #blog 
+        &:hover #blog 
             background: #f98ff7
 
-        #me 
+        &:hover #me 
             background: #a946cc
 
+        &:hover a
+            outline: 1px solid white
+            box-shadow: 0 0 3px black
+
+            &:hover
+                background: white
+
+        &:hover .works 
+            color: #0a995c
+
+        &:hover .arts 
+            color: #10ff12
+
+        &:hover .blog 
+            color: #f98ff7
+
+        &:hover .me 
+            color: #a946cc
+
         .text 
-            width: 55%
+            width: 70%
+            text-align: center
+            margin-top: 25px
+            font-size: 17pt
 

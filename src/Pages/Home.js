@@ -30,19 +30,23 @@ class Home extends Component {
         <div className="wrapper">
             <div className="block-info">
                 <div className="color" id="works">Works</div>
-                <div className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quam. Itaque, obcaecati maxime tempora doloremque sequi, natus dolorem perferendis illo nostrum unde cupiditate rerum doloribus dicta repellendus ipsa odio repudiandae nisi fuga vitae tenetur? Enim molestiae fugit, quisquam voluptas iure possimus odit eligendi excepturi placeat rem aperiam dolorem voluptate dignissimos doloremque fuga amet vero quasi accusamus libero consectetur quis. Commodi facere obcaecati est soluta ad totam illo provident itaque perspiciatis eaque explicabo laboriosam, excepturi odit quia, ex, necessitatibus facilis delectus ipsum voluptatem voluptatibus assumenda quidem molestiae. Velit doloribus optio doloremque id est ex eos earum distinctio! Illum mollitia quam vitae.</div>
+                <div className="text">All websites I have created or helped to create by this time.</div>
+                <a href="#" class="works">Take a look</a>
             </div>
             <div className="block-info">
-                    <div className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quam. Itaque, obcaecati maxime tempora doloremque sequi, natus dolorem perferendis illo nostrum unde cupiditate rerum doloribus dicta repellendus ipsa odio repudiandae nisi fuga vitae tenetur? Enim molestiae fugit, quisquam voluptas iure possimus odit eligendi excepturi placeat rem aperiam dolorem voluptate dignissimos doloremque fuga amet vero quasi accusamus libero consectetur quis. Commodi facere obcaecati est soluta ad totam illo provident itaque perspiciatis eaque explicabo laboriosam, excepturi odit quia, ex, necessitatibus facilis delectus ipsum voluptatem voluptatibus assumenda quidem molestiae. Velit doloribus optio doloremque id est ex eos earum distinctio! Illum mollitia quam vitae.</div>
                 <div className="color" id="arts">Arts</div>
+                <div className="text">I love art. I love music. Sometimes I draw pics. But mostly all my art is music - singing, growling and playing in bands.</div>
+                <a href="#" class="arts">Take a look</a>
             </div>
             <div className="block-info">
                 <div className="color" id="blog">Blog</div>
-                <div className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quam. Itaque, obcaecati maxime tempora doloremque sequi, natus dolorem perferendis illo nostrum unde cupiditate rerum doloribus dicta repellendus ipsa odio repudiandae nisi fuga vitae tenetur? Enim molestiae fugit, quisquam voluptas iure possimus odit eligendi excepturi placeat rem aperiam dolorem voluptate dignissimos doloremque fuga amet vero quasi accusamus libero consectetur quis. Commodi facere obcaecati est soluta ad totam illo provident itaque perspiciatis eaque explicabo laboriosam, excepturi odit quia, ex, necessitatibus facilis delectus ipsum voluptatem voluptatibus assumenda quidem molestiae. Velit doloribus optio doloremque id est ex eos earum distinctio! Illum mollitia quam vitae.</div>
+                <div className="text">Once a week I try to write a blog post about things related to coding, web development or metal music.</div>
+                <a href="#" class="blog">Take a look</a>
             </div>
             <div className="block-info">
-                    <div className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quam. Itaque, obcaecati maxime tempora doloremque sequi, natus dolorem perferendis illo nostrum unde cupiditate rerum doloribus dicta repellendus ipsa odio repudiandae nisi fuga vitae tenetur? Enim molestiae fugit, quisquam voluptas iure possimus odit eligendi excepturi placeat rem aperiam dolorem voluptate dignissimos doloremque fuga amet vero quasi accusamus libero consectetur quis. Commodi facere obcaecati est soluta ad totam illo provident itaque perspiciatis eaque explicabo laboriosam, excepturi odit quia, ex, necessitatibus facilis delectus ipsum voluptatem voluptatibus assumenda quidem molestiae. Velit doloribus optio doloremque id est ex eos earum distinctio! Illum mollitia quam vitae.</div>
                 <div className="color" id="me">It's Me</div>
+                <div className="text">Basically this is my CV and some more details about me.</div>
+                <a href="#" class="me">Take a look</a>
             </div>
         </div>
       </div>
