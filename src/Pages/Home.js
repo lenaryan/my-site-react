@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class Home extends Component {
     rotateHamburger() {
@@ -31,22 +32,22 @@ class Home extends Component {
             <div className="block-info">
                 <div className="color" id="works">Works</div>
                 <div className="text">All websites I have created or helped to create by this time.</div>
-                <a href="#" class="works">Take a look</a>
+                <Link to='works' class="works">Take a look</Link>
             </div>
             <div className="block-info">
                 <div className="color" id="arts">Arts</div>
                 <div className="text">I love art. I love music. Sometimes I draw pics. But mostly all my art is music - singing, growling and playing in bands.</div>
-                <a href="#" class="arts">Take a look</a>
+                <Link to='arts' class="arts">Take a look</Link>
             </div>
             <div className="block-info">
                 <div className="color" id="blog">Blog</div>
                 <div className="text">Once a week I try to write a blog post about things related to coding, web development or metal music.</div>
-                <a href="#" class="blog">Take a look</a>
+                <Link to='blog' class="blog">Take a look</Link>
             </div>
             <div className="block-info">
                 <div className="color" id="me">It's Me</div>
                 <div className="text">Basically this is my CV and some more details about me.</div>
-                <a href="#" class="me">Take a look</a>
+                <Link to='me' class="me">Take a look</Link>
             </div>
         </div>
       </div>
