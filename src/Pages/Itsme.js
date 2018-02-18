@@ -9,7 +9,7 @@ class Itsme extends Component {
         <Header/>
         <div className="home">
             <div className="wrapper">
-                It's me
+              <h1>About me</h1>
             </div>
         </div>
         <Footer />

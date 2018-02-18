@@ -6,7 +6,6 @@ import Works from './Pages/Works';
 import Arts from './Pages/Arts';
 import Itsme from './Pages/Itsme';
 import './Styles/CSS/default.min.css';
-import './scripts.js';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 ReactDOM.render(

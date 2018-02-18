@@ -9,7 +9,7 @@ class Arts extends Component {
         <Header/>
         <div className="home">
             <div className="wrapper">
-                Arts
+                <h1>My Arts</h1>
             </div>
         </div>
         <Footer />

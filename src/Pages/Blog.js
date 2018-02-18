@@ -9,7 +9,7 @@ class Blog extends Component {
         <Header/>
         <div className="home">
             <div className="wrapper">
-                Blog
+              <h1>Blog</h1>
             </div>
         </div>
         <Footer />
