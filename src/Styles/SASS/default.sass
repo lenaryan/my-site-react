@@ -13,7 +13,7 @@ html, body
 .home
     position: relative
     overflow-x: hidden
-    min-height: 100vh 
+    min-height: calc(100vh - 260px) 
     background: linear-gradient(to right, rgba(0,0,0,0.85),rgba(0,0,0,0.75),rgba(0,0,0,0.85))
 
 #toggle-label 
@@ -238,6 +238,7 @@ html, body
             font-size: 17pt
 .footer
     background: linear-gradient(to top, black, rgba(0, 0, 0, 0.85))
+    height: 180px
 
     .foot-inside
         text-align: center
@@ -276,6 +277,7 @@ html, body
                 color: #a946cc
 .header
     background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.85))
+    height: 80px
 
     .head-inside
         display: flex
@@ -301,6 +303,28 @@ html, body
             font-size: 19pt
             letter-spacing: 4px
             flex: 1
+            transition-duration: 0.3s
+
+            &:hover
+                opacity: 0.7
 
         .menu-item
             margin-left: 50px
+.sites-gallery
+    display: grid
+    grid-template-columns: 1fr 1fr
+    margin: 50px 0
+    grid-gap: 20px
+
+    .site
+        text-align: center
+
+    .screens
+        display: flex;
+        flex-wrap: nowrap;
+
+        img
+            height: 220px
+
+            &:first-of-type
+                margin-right: 10px

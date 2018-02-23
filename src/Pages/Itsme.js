@@ -5,7 +5,7 @@ import Header from '../Header';
 class Itsme extends Component {
   render() {
     return (
-      <div className="me-page"> 
+      <div className="me-page site-page"> 
         <Header/>
         <div className="home">
             <div className="wrapper">

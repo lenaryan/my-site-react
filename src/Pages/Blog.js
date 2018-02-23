@@ -5,7 +5,7 @@ import Header from '../Header';
 class Blog extends Component {
   render() {
     return (
-      <div className="blog-page"> 
+      <div className="blog-page site-page"> 
         <Header/>
         <div className="home">
             <div className="wrapper">
