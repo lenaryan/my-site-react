@@ -10,10 +10,13 @@ html, body
         size: cover
         attachment: fixed
 
+a
+    transition: all 0.2s ease-in-out
+
 .home
     position: relative
     overflow-x: hidden
-    min-height: calc(100vh - 260px) 
+    min-height: calc(100vh - 300px) 
     background: linear-gradient(to right, rgba(0,0,0,0.85),rgba(0,0,0,0.75),rgba(0,0,0,0.85))
 
 #toggle-label 
@@ -238,7 +241,7 @@ html, body
             font-size: 17pt
 .footer
     background: linear-gradient(to top, black, rgba(0, 0, 0, 0.85))
-    height: 180px
+    height: 220px
 
     .foot-inside
         text-align: center
@@ -263,18 +266,45 @@ html, body
                 color: peachpuff
                 transition: all 0.3s ease-in-out
 
-            &:hover
-                font-weight: 600
-
         &:hover
+            span
+                text-decoration: underline
+                text-decoration-style: dashed
+                text-underline-position: under
+
             .fcol1
                 color: #0a995c
+                text-decoration-color: #0a995c
             .fcol2
                 color: #10ff12
+                text-decoration-color: #10ff12
             .fcol3
                 color: #f98ff7
+                text-decoration-color: #f98ff7
             .fcol4
                 color: #a946cc
+                text-decoration-color: #a946cc
+            
+        .social
+            display: flex;
+            width: 110px;
+            justify-content: space-between;
+            position: relative;
+            top: 15px;
+
+            .fab:before
+                transition-duration: 0.2s
+                color: peachpuff
+
+            .fa-vk:hover:before
+                color: #10ff12
+
+            .fa-facebook-f:hover:before
+                color: #f98ff7
+
+            .fa-instagram:hover:before
+                color: #a946cc
+
 .header
     background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.85))
     height: 80px
@@ -311,20 +341,57 @@ html, body
         .menu-item
             margin-left: 50px
 .sites-gallery
-    display: grid
-    grid-template-columns: 1fr 1fr
-    margin: 50px 0
-    grid-gap: 20px
+    margin: 70px 0 120px
 
     .site
+        display: grid
+        grid-template-columns: 2fr 1fr
+        margin: 0 0 50px
+        grid-gap: 20px
         text-align: center
+        align-items: center
+
+        &:hover
+            a
+                color: rgb(16, 255, 18);
+
+        a
+            color: peachpuff;
+            display: inline-block;
+            font-size: 18pt;
+            text-decoration-style: dashed;
+            text-underline-position: under;
+            transition-duration: 0.2s;
+
+            &:hover
+                color: #f98ff7;
 
     .screens
         display: flex;
         flex-wrap: nowrap;
 
         img
-            height: 220px
+            max-height: 290px
+            position: relative
+            box-shadow: 0 0 5px black
+
+            &:hover
+                transform: scale(2)
+                transform-origin: left
+                z-index: 1
 
             &:first-of-type
-                margin-right: 10px
+                margin-right: 20px
+    .resp
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0 0 30px
+
+        img
+            filter: invert(1)
+            height: 50px
+            margin-left: 5px
+
+    .screens + p
+        margin-bottom: 12px
