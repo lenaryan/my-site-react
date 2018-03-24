@@ -1,11 +1,45 @@
 import React, { Component } from 'react';
+import styled from'styled-components';
+
 
 class Footer extends Component {
   render() {
+    const Footer = styled.section`
+      background: linear-gradient(to top, black, rgba(0, 0, 0, 0.85));
+      height: 220px;
+    `;
+
+    const FootInside = styled.section`
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 30px;
+      width: 70%;
+      border-top: 1px solid lightgrey;
+      margin: 0 auto;
+
+      > p {
+        margin: 0 0 5px;
+      }
+
+      > a {
+        font-size: 20pt;
+        text-decoration: none;
+        color: unset;
+      }
+
+      > a > span {
+        color: peachpuff;
+        transition: all 0.3s ease-in-out;
+      }
+    `;
+
     return (
-      <div className="footer"> 
+      <Footer> 
         <div className="wrapper">
-            <div className="foot-inside">
+            <FootInside>
                 <p>Contact me:</p>
                 <a href="mailto:enenanichutina@gmail.com">
                     <span className="fcol1">enenanichutina</span>
@@ -18,9 +52,9 @@ class Footer extends Component {
                   <a href="https://www.facebook.com/russian.plazma.drink"><i class="fab fa-facebook-f"></i></a>
                   <a href="https://www.instagram.com/russian_plazma_drink/"><i class="fab fa-instagram"></i></a>                  
                 </div>
-                </div>
-            </div>
-      </div>
+            </FootInside>
+        </div>
+      </Footer>
     );
   }
 }
