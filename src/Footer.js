@@ -34,6 +34,55 @@ class Footer extends Component {
         color: peachpuff;
         transition: all 0.3s ease-in-out;
       }
+
+      :hover span {
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-underline-position: under;
+      }
+
+      :hover .fcol1 {
+        color: #0a995c;
+        text-decoration-color: #0a995c;
+      }
+      :hover .fcol2 {
+        color: #10ff12;
+        text-decoration-color: #10ff12;
+      }
+      :hover .fcol3 {
+        color: #f98ff7;
+        text-decoration-color: #f98ff7;
+      }
+      :hover .fcol4 {
+        color: #a946cc;
+        text-decoration-color: #a946cc;
+      }
+
+    `;
+
+    const Social = styled.div`
+      display: flex;
+      width: 110px;
+      justify-content: space-between;
+      position: relative;
+      top: 15px;
+
+      > a > .fab:before {
+        transition-duration: 0.2s;
+        color: peachpuff;
+      }
+
+      > a > .fa-vk:hover:before {
+        color: #10ff12;
+      }
+
+      > a > .fa-facebook-f:hover:before {
+        color: #f98ff7;
+      }
+
+      > a > .fa-instagram:hover:before {
+        color: #a946cc;
+      }
     `;
 
     return (
@@ -47,11 +96,11 @@ class Footer extends Component {
                     <span className="fcol3">gmail</span>
                     <span className="fcol4">.com</span>
                 </a>
-                <div class="social">
+                <Social>
                   <a href="https://vk.com/lena_ryan"><i class="fab fa-vk"></i></a>
                   <a href="https://www.facebook.com/russian.plazma.drink"><i class="fab fa-facebook-f"></i></a>
                   <a href="https://www.instagram.com/russian_plazma_drink/"><i class="fab fa-instagram"></i></a>                  
-                </div>
+                </Social>
             </FootInside>
         </div>
       </Footer>
