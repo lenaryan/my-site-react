@@ -1,21 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 import App from './App';
-import Blog from './Pages/Blog';
-import Works from './Pages/Works';
-import Arts from './Pages/Arts';
-import Itsme from './Pages/Itsme';
-import './Styles/CSS/default.min.css';
-import {BrowserRouter, Route} from 'react-router-dom';
+import registerServiceWorker from './registerServiceWorker';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './reducers/rootReducer';
 
-ReactDOM.render(
-    <BrowserRouter>
-        <div>
-            <Route exact path='/' component={App} />
-            <Route path='/blog' component={Blog} />
-            <Route path='/works' component={Works} />
-            <Route path='/arts' component={Arts} />
-            <Route path='/me' component={Itsme} />
-        </div>
-    </BrowserRouter>, 
-    document.getElementById('root'));
+const store = createStore(rootReducer);
+
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
+registerServiceWorker();
