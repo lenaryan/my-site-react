@@ -1,18 +1,7 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-.home .post img {
-  position: absolute;
-  top: 20px;
-  left: -100px;
-  opacity: 0.6;
-  width: 200px;
-}
-
-.home .post {
-  overflow: hidden;
-  padding-left: 80px;
-}
+body {margin: 0;padding: 0;font-size:15px;}
+.page-footer {padding: 20px 0;font-size: 30px}
+.App {background:url(../src/images/guitar.jpg) no-repeat bottom center;background-size:cover;}
+.overlay{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-flow: column;flex-flow: column;min-height: 100vh;height: 100%;background:rgba(0,0,0,0.7);}
+.overlay > .container {-webkit-box-flex: 1;-ms-flex: 1;flex: 1;}
+.home{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.home h1, .home h5{margin: 10px 0;}
