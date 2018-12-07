@@ -1,7 +1,12 @@
 body {margin: 0;padding: 0;font-size:15px;}
-.page-footer {padding: 20px 0;font-size: 30px}
+.page-footer {padding: 20px 0;font-size: 25px}
 .App {background:url(../src/images/guitar.jpg) no-repeat bottom center;background-size:cover;}
 .overlay{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-flow: column;flex-flow: column;min-height: 100vh;height: 100%;background:rgba(0,0,0,0.7);}
 .overlay > .container {-webkit-box-flex: 1;-ms-flex: 1;flex: 1;}
 .home{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .home h1, .home h5{margin: 10px 0;}
+.sidenav a.social-mob{transition:all 0.3s;display: inline-block;padding-right: 0;font-size: 20px;margin-top: 20px;}
+.sidenav a.social-mob:last-of-type{padding-left: 0;}
+.sidenav a.social-mob i{margin-right: 20px;}
+.sidenav a.social-mob:hover{background: none;opacity: 0.7;}
+.sidenav{padding-top: 20%;width: 200px;}
