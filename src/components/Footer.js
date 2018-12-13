@@ -2,10 +2,10 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="page-footer light-green accent-4">
+        <footer className="page-footer grey darken-3">
             <div className="container center">
                 <p style={{margin: 0}}>Contact me:</p>
-                <p style={{margin: 0}}><a href="mailto:deggmb@yandex.ru" className="grey-text text-darken-3">deggmb@yandex.ru</a></p>
+                <p style={{margin: 0}}><a href="mailto:deggmb@yandex.ru" className="light-green-text text-accent-4">deggmb@yandex.ru</a></p>
             </div>
         </footer>
     )

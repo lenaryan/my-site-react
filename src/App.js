@@ -8,14 +8,12 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App white-text">
-          <div className="overlay">
-            <Navbar />
-            <Switch>
-              <Route exact path="/" component={Home} />
-            </Switch>
-            <Footer />
-          </div>
+        <div className="App white-text grey darken-4">
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={Home} />
+          </Switch>
+          <Footer />
         </div>
       </BrowserRouter>
     );
