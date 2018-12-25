@@ -1,14 +1,16 @@
-body {margin: 0;padding: 0;font-size:15px;}
+body {margin: 0;padding: 0;font-size:13pt;line-height: 1.7;}
+p{margin: 10px 0;}
 .page-footer {padding: 20px 0;font-size: 25px}
+.page-footer a:hover span,.page-footer a:focus span{-webkit-text-decoration:underline dashed;text-decoration:underline dashed;text-underline-position:under;}
 .App {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-flow: column;flex-flow: column;min-height: 100vh;height: 100%;}
 .App > .container {-webkit-box-flex: 1;-ms-flex: 1;flex: 1;}
 .home{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .home h1, .home h5{margin: 10px 0;}
 .sidenav a{color:white !important; font-size:16px !important;}
-.sidenav a.social-mob{transition:all 0.3s;display: inline-block;padding-right: 0;font-size: 20px !important;margin-top: 20px;}
+.sidenav a.social-mob{-webkit-transition:all 0.3s;transition:all 0.3s;display: inline-block;padding-right: 0;font-size: 20px !important;margin-top: 20px;}
 .sidenav a.social-mob:last-of-type{padding-left: 0;}
 .sidenav a.social-mob i{margin-right: 25px;}
 .sidenav a.social-mob:hover{background: none;opacity: 0.7;}
 .sidenav{padding-top: 20%;width: 200px;}
-.works-pics{display: grid;grid-template-columns: repeat(5, 1fr);grid-gap: 20px;margin: 50px 0 100px;}
+.works-pics{display: grid;grid-template-columns: repeat(3, 1fr);grid-gap: 30px 20px;margin: 60px 0 100px;}
 .works-pics img{min-width: 150px;width: 100%;}
