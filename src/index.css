@@ -1,3 +1,4 @@
+*{transition:all 0.3s ease-in-out;}
 body {margin: 0;padding: 0;font-size:13pt;line-height: 1.7;}
 p{margin: 10px 0;}
 .page-footer {padding: 20px 0;font-size: 25px}
@@ -10,11 +11,12 @@ p{margin: 10px 0;}
 .sidenav a.social-mob{-webkit-transition:all 0.3s;transition:all 0.3s;display: inline-block;padding-right: 0;font-size: 20px !important;margin-top: 20px;}
 .sidenav a.social-mob:last-of-type{padding-left: 0;}
 .sidenav a.social-mob i{margin-right: 25px;}
-.sidenav a.social-mob:hover{background: none;opacity: 0.7;}
+.sidenav a.social-mob:hover,.sidenav a.social-mob:focus{background: none;opacity: 0.7;}
 .sidenav{padding-top: 20%;width: 200px;}
 .works-pics{display: grid;grid-template-columns: repeat(3, 1fr);grid-gap: 40px 30px;margin: 50px 0 100px;}
 .works-pics img{min-width: 150px;width: 100%;}
 .me .material-icons{position: relative;top:3px;}
 .me li{margin: 5px 0;}
 .me img {width: 30%;margin: 0 0 20px 30px;}
-.text-me{margin-top: 50px;}
+.text-me{margin: 50px 0 100px;}
+.text-me a:hover,.text-me a:focus{opacity: 0.7;}
