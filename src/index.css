@@ -20,3 +20,5 @@ p{margin: 10px 0;}
 .me img {width: 30%;margin: 0 0 20px 30px;}
 .text-me{margin: 50px 0 100px;}
 .text-me a:hover,.text-me a:focus{opacity: 0.7;}
+.blog .card .card-title {font-weight: 500;}
+.blog {padding-bottom: 50px;}
