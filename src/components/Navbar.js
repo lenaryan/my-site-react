@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {Link, NavLink, withRouter} from 'react-router-dom';
+import SignedInLinks from './SignedInLinks';
 import M from 'materialize-css';
 
 class Navbar extends Component {
@@ -23,6 +24,7 @@ class Navbar extends Component {
                             <li><NavLink to="/works">Works</NavLink></li>
                             <li><NavLink to="/blog">Blog</NavLink></li>
                             <li><NavLink to="/about-me">About Me</NavLink></li>
+                            <SignedInLinks />
                             <li><a className="btn-floating green" href="vk.com/lena_ryan"><i className="fab fa-vk"></i></a></li>
                             <li><a className="btn-floating green" style={{margin:0}} href="www.instagram.com/russian_plazma_drink"><i className="fab fa-instagram"></i></a></li>
                         </ul>

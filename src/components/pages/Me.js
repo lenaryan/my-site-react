@@ -12,14 +12,14 @@ const Me = () => {
                 <p>I want to become a frontend React dev so I learn React in my spare time.</p>
                 <p>Also I:</p>
                 <ul>
-                    <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>create CSS-images on Codepen as <a href="https://codepen.io/lenaryan/" className="light-green-text text-accent-2">Lena Ryan</a></li>
+                    <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>create CSS-images and stuff on Codepen as <a href="https://codepen.io/lenaryan/" className="light-green-text text-accent-2">Lena Ryan</a></li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>can speak Polish (had been living in Warsaw for 15 months)</li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>squat 12x30kg (the number is growing)</li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>growl like a male death metal vocalist</li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>adore watching YouTube tutorials and conference talks</li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>got all my frontend knowledge on YouTube</li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>ride a mini-cruiser in summer and a snowboard in winter</li>
-                    <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>have the only bad habit - I love eat</li>
+                    <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>have the only bad habit - I love to eat</li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>want a corgi puppy</li>
                 </ul>
             </div>

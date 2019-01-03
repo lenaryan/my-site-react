@@ -7,6 +7,8 @@ import Works from './components/pages/Works';
 import Blog from './components/blog/Blog';
 import Me from './components/pages/Me';
 import BlogPost from './components/blog/BlogPost';
+import CreateBlogPost from './components/blog/CreateBlogPost';
+import AdminSignIn from './components/pages/AdminSignIn';
 
 class App extends Component {
   render() {
@@ -18,8 +20,11 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/works" component={Works} />
             <Route exact path="/blog" component={Blog} />
-            <Route path="/blog/:id" component={BlogPost} />
+            <Route exact path="/blog/new" component={CreateBlogPost} />
+            <Route exact path="/blog/:id" component={BlogPost} />
             <Route path="/about-me" component={Me} />
+            <Route path="/signin" component={AdminSignIn} />
+
           </Switch>
           <Footer />
         </div>
