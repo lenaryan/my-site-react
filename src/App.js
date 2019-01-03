@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Works from './components/pages/Works';
 import Blog from './components/blog/Blog';
 import Me from './components/pages/Me';
+import BlogPost from './components/blog/BlogPost';
 
 class App extends Component {
   render() {
@@ -15,9 +16,10 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/works" component={Works} />
+            <Route path="/works" component={Works} />
             <Route exact path="/blog" component={Blog} />
-            <Route exact path="/about-me" component={Me} />
+            <Route path="/blog/:id" component={BlogPost} />
+            <Route path="/about-me" component={Me} />
           </Switch>
           <Footer />
         </div>

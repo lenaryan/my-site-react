@@ -22,3 +22,5 @@ p{margin: 10px 0;}
 .text-me a:hover,.text-me a:focus{opacity: 0.7;}
 .blog .card .card-title {font-weight: 500;}
 .blog {padding-bottom: 50px;}
+.blog-post {padding: 30px 0 50px;}
+.blog-post .card-title {margin-bottom: 30px;}
