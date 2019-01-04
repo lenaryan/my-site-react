@@ -35,6 +35,7 @@ class Navbar extends Component {
                     <li><NavLink to="/works">Works</NavLink></li>
                     <li><NavLink to="/blog">Blog</NavLink></li>
                     <li><NavLink to="/about-me">About Me</NavLink></li>
+                    <SignedInLinks />
                     <li><a className="social-mob" href="vk.com/lena_ryan">
                             <i className="fab fa-vk light-green-text text-accent-3"></i>
                         </a>
