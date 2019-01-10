@@ -3,7 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 const SignedInLinks = () => {
     return (
-        <li><NavLink to="/blog/new">New Post</NavLink></li>
+        <span>
+            <li><NavLink to="/blog/new">New Post</NavLink></li>
+            <li><NavLink to="/">Log Out</NavLink></li>
+        </span>
     )
 }
 

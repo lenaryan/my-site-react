@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { signIn } from '../../store/actions/authActions';
 
 class AdminSignIn extends Component {
     state = {
-        login: '',
+        email: '',
         password: ''
     }
     handleChange = (e) => {
@@ -12,15 +14,17 @@ class AdminSignIn extends Component {
     }
     handleSubmit = (e) => {
         e.preventDefault();
+        this.props.signIn(this.state);
     }
     render() {
+        const { authError } = this.props;
         return (
             <div className="container">
                 <form onSubmit={this.handleSubmit} className="signin">
                     <h1 className="center">Sign In</h1>
                     <div className="input-field">
-                        <label htmlFor="login">Login</label>
-                        <input className="white-text" type="text" id="login" onChange={this.handleChange} />
+                        <label htmlFor="email">E-mail</label>
+                        <input className="white-text" type="email" id="email" onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
                         <label htmlFor="password">Password</label>
@@ -28,6 +32,9 @@ class AdminSignIn extends Component {
                     </div>
                     <div className="input-field">
                         <button className="btn grey darken-2 z-depth-2 right">Sign In</button>
+                        <div className="green-text center">
+                            { authError ? <p>{authError}</p> : null}
+                        </div>
                     </div>
                 </form>
             </div>
@@ -35,4 +42,16 @@ class AdminSignIn extends Component {
     }
 }
 
-export default AdminSignIn;
+const mapStateToProps = (state) => {
+    return {
+        authError: state.auth.authError
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        signIn: (creds) => dispatch(signIn(creds))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AdminSignIn);
