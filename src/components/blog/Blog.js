@@ -3,6 +3,7 @@ import BlogPostSummary from './BlogPostSummary';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
+import { Link } from "react-router-dom";
 
 class Blog extends Component {
     render() {
@@ -13,7 +14,9 @@ class Blog extends Component {
                 <div className="blog-posts section">
                     { posts && posts.map(post => {
                         return (
-                            <BlogPostSummary post={post} key={post.id} />
+                            <Link to={'/blog/' + post.id}>
+                                <BlogPostSummary post={post} key={post.id} />
+                            </Link>
                         )
                     })}
                 </div>
