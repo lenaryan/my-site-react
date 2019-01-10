@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import {Link, NavLink, withRouter} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import SignedInLinks from './SignedInLinks';
 import M from 'materialize-css';
+import { connect } from 'react-redux';
 
 class Navbar extends Component {
     componentDidMount() {
@@ -48,4 +49,11 @@ class Navbar extends Component {
     }
 }
 
-export default withRouter(Navbar);
+const mapStateToProps = (state) => {
+    console.log(state);
+    return {
+
+    }
+}
+
+export default connect(mapStateToProps)(Navbar);

@@ -14,8 +14,8 @@ class Blog extends Component {
                 <div className="blog-posts section">
                     { posts && posts.map(post => {
                         return (
-                            <Link to={'/blog/' + post.id}>
-                                <BlogPostSummary post={post} key={post.id} />
+                            <Link to={'/blog/' + post.id} key={post.id}>
+                                <BlogPostSummary post={post} />
                             </Link>
                         )
                     })}
