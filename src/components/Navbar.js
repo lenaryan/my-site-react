@@ -13,6 +13,7 @@ class Navbar extends Component {
     }
 
     render() {
+        const { auth } = this.props;
         return (
             <div>
                 <nav className="nav-wrapper grey darken-3">
@@ -21,11 +22,11 @@ class Navbar extends Component {
                         <a href="#" data-target="mobile-menu" className="sidenav-trigger">
                             <i className="material-icons light-green-text">menu</i>
                         </a>
-                        <ul className="right hide-on-med-and-down">
+                        <ul className="main-nav right hide-on-med-and-down">
                             <li><NavLink to="/works">Works</NavLink></li>
                             <li><NavLink to="/blog">Blog</NavLink></li>
                             <li><NavLink to="/about-me">About Me</NavLink></li>
-                            <SignedInLinks />
+                            {auth.uid && <SignedInLinks />}
                             <li><a className="btn-floating green" href="vk.com/lena_ryan"><i className="fab fa-vk"></i></a></li>
                             <li><a className="btn-floating green" style={{margin:0}} href="www.instagram.com/russian_plazma_drink"><i className="fab fa-instagram"></i></a></li>
                         </ul>
@@ -50,9 +51,8 @@ class Navbar extends Component {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state);
     return {
-
+        auth: state.firebase.auth
     }
 }
 
