@@ -6,10 +6,10 @@ import { connect } from 'react-redux';
 
 class Navbar extends Component {
     componentDidMount() {
-        document.addEventListener('DOMContentLoaded', function() {
+        //document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.sidenav');
             var instances = M.Sidenav.init(elems);
-        });
+        //});
     }
 
     render() {
@@ -19,7 +19,7 @@ class Navbar extends Component {
                 <nav className="nav-wrapper grey darken-3">
                     <div className="container">
                         <Link to="/" className="brand-logo">MetalWebDev</Link>
-                        <a href="#" data-target="mobile-menu" className="sidenav-trigger">
+                        <a href="" data-target="mobile-menu" className="sidenav-trigger">
                             <i className="material-icons light-green-text">menu</i>
                         </a>
                         <ul className="main-nav right hide-on-med-and-down">
@@ -29,6 +29,7 @@ class Navbar extends Component {
                             {auth.uid && <SignedInLinks />}
                             <li><a className="btn-floating green" href="vk.com/lena_ryan"><i className="fab fa-vk"></i></a></li>
                             <li><a className="btn-floating green" style={{margin:0}} href="www.instagram.com/russian_plazma_drink"><i className="fab fa-instagram"></i></a></li>
+                            <li><a className="btn-floating green" href="twitter.com/metalwebdev"><i className="fab fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </nav>
@@ -43,6 +44,9 @@ class Navbar extends Component {
                         </a>
                         <a className="social-mob" href="www.instagram.com/russian_plazma_drink">
                             <i className="fab fa-instagram light-green-text text-accent-3"></i>
+                        </a>
+                        <a className="social-mob" href="twitter.com/metalwebdev">
+                            <i className="fab fa-twitter light-green-text text-accent-3"></i>
                         </a></li>
                 </ul>
             </div>

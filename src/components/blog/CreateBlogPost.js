@@ -16,6 +16,7 @@ class CreateBlogPost extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.createPost(this.state);
+        this.props.history.push('/blog');
     }
     render() {
         const {auth} = this.props;
