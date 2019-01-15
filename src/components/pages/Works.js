@@ -13,7 +13,7 @@ class Works extends Component {
         return (
             <div className="container works">
                 <h1 className="center">My Works</h1>
-                <p className="center">Hover over an image to look at details. Flexbox, RWD and scripts are not mentioned, as they are used by me everywhere and every time. In parentheses I wrote what I was responsible for. If you see just a CMS title, it means everything on a website was made by me. Except designing it, of course.</p>
+                <p className="center">On a desktop, hover over an image to look at details. Flexbox, RWD and scripts are not mentioned, as they are used by me everywhere and every time. In parentheses I wrote what I was responsible for. If you see just a CMS title, it means everything on a website was made by me. Except designing it, of course.</p>
                 <div className="works-pics">
                     <img src={require("../../images/site-cancer.jpg")} alt="work one" className="materialboxed z-depth-3" 
                         title="zhivojrak.ru - Joomla" />

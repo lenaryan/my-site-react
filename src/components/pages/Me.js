@@ -19,7 +19,7 @@ const Me = () => {
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>adore watching YouTube tutorials and conference talks</li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>got all my frontend knowledge on YouTube</li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>ride a mini-cruiser in summer and a snowboard in winter</li>
-                    <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>have the only bad habit - I love to eat</li>
+                    <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>have the only bad habit - I love eating</li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>want a corgi puppy</li>
                 </ul>
             </div>
