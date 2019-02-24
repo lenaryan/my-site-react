@@ -9,6 +9,7 @@ import Me from './components/pages/Me';
 import BlogPost from './components/blog/BlogPost';
 import CreateBlogPost from './components/blog/CreateBlogPost';
 import AdminSignIn from './components/pages/AdminSignIn';
+import Metronome from './components/pages/Metronome';
 
 class App extends Component {
   render() {
@@ -18,7 +19,8 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/works" component={Works} />
+            <Route exact path="/works" component={Works} />
+            <Route path="/works/metronome" component={Metronome} />
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/blog/new" component={CreateBlogPost} />
             <Route exact path="/blog/:id" component={BlogPost} />

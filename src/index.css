@@ -1,6 +1,7 @@
 *{transition:all 0.3s ease-in-out;}
 body {margin: 0;padding: 0;font-size:13pt;line-height: 1.7;}
 p{margin: 10px 0;}
+a{color:inherit;}
 .page-footer {padding: 20px 0;font-size: 25px}
 .page-footer a:hover span,.page-footer a:focus span{-webkit-text-decoration:underline dashed;text-decoration:underline dashed;text-underline-position:under;}
 .App {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-flow: column;flex-flow: column;min-height: 100vh;height: 100%;}
@@ -33,6 +34,11 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
 .tabs .tab a:focus, .tabs .tab a:focus.active {background-color: rgba(255,255,255,0.2);}
 .tabs .indicator{background-color: rgba(139, 195, 74, 0.5);}
 .works > .row > .col{float:none;margin:auto;}
+.bpm-slider{margin: 50px auto;width: 100%;max-width: 500px;}
+.bpm-slider button{display: block;margin: 20px auto;border: none;padding: 5px 30px 8px;letter-spacing: 0.5px;font-size: 17pt;}
+.bpm-slider button:hover,.bpm-slider button:focus{cursor:pointer;background:#5ed863 !important;}
+.bpm-slider > p{font-size: 17pt;letter-spacing: 0.5px;line-height: 1;}
+.bpm-slider input[type=range]{height: 1px;}
 
 @media all and (max-width: 992px) {h1{font-size: 6vw;}
 }

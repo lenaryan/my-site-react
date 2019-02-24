@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import M from 'materialize-css';
 import CMSWorks from "./CMSWorks";
+import ReactWorks from "./ReactWorks";
 
 class Works extends Component {
     componentDidMount() {
@@ -25,7 +26,7 @@ class Works extends Component {
                         </ul>
                     </div>
                     <div id="cms-works" className="col s12"><CMSWorks /></div>
-                    <div id="react-works" className="col s12">React Works</div>
+                    <div id="react-works" className="col s12"><ReactWorks /></div>
                 </div>
     
             </div>
