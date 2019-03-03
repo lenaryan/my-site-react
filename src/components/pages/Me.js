@@ -17,6 +17,7 @@ const Me = () => {
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>squat 12x35kg (the number is growing)</li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>play guitar, drums and growl like a male death metal vocalist</li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>adore watching YouTube tutorials and conference talks</li>
+                    <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>collect guitar picks</li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>got all my frontend knowledge on YouTube</li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>ride a mini-cruiser in summer and a snowboard in winter</li>
                     <li><i class="material-icons light-green-text text-accent-2 left">arrow_forward</i>have the only bad habit - I love eating</li>
