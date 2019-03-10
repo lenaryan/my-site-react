@@ -8,23 +8,23 @@ const BlogPost = (props) => {
     const { post } = props;
     if (post) {
         return (
-            <div className="container section blog-post">
-                <div className="card-z-depth-2">
+            <main className="container section blog-post">
+                <div className="card transparent">
                     <div className="card-content">
-                        <h4 className="card-title center">{ post.title }</h4>
+                        <h1 className="card-title center">{ post.title }</h1>
                         <p>{ post.content }</p>
                     </div>
                     <div className="card-action grey-text">
                         <div>{moment(post.createdAt.toDate()).calendar()}</div>
                     </div>
                 </div>
-            </div>
+            </main>
         )
     } else {
         return (
-           <div className="container center">
+           <main className="container center">
                <p>Loading project...</p>
-           </div> 
+           </main> 
         )
     }
 }

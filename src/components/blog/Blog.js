@@ -9,7 +9,7 @@ class Blog extends Component {
     render() {
         var {posts} = this.props;
         return(
-            <div className="container blog">
+            <main className="container blog">
                 <h1 className="center">Blog</h1>
                 <div className="blog-posts section">
                     { posts && posts.map(post => {
@@ -20,7 +20,7 @@ class Blog extends Component {
                         )
                     })}
                 </div>
-            </div>
+            </main>
         )
     }
 }

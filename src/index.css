@@ -30,6 +30,7 @@ a{color:inherit;}
 .blog .card{background: linear-gradient(to top left, lightgrey, white);}
 .blog-post {padding: 30px 0 50px;}
 .blog-post .card-title {margin-bottom: 30px;}
+.blog-post h1.card-title{margin: 0 0 30px !important;font-weight: normal;font-size: 30px;line-height: 1.2 !important;}
 nav li>a.active{background:rgba(0,0,0,0.1);}
 nav .btn-floating:hover, nav .btn-floating:focus{opacity:0.7;}
 .sidenav li>a.active{background:rgba(0,0,0,0.05);}
