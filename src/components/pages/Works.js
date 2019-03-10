@@ -15,7 +15,7 @@ class Works extends Component {
 
     render() {
         return (
-            <div className="container works">
+            <main className="container works">
                 <h1 className="center">My Works</h1>
 
                 <div className="row">
@@ -29,7 +29,7 @@ class Works extends Component {
                     <div id="react-works" className="col s12"><ReactWorks /></div>
                 </div>
     
-            </div>
+            </main>
         )
     }
 }

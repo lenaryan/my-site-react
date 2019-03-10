@@ -21,7 +21,7 @@ class AdminSignIn extends Component {
         const { authError, auth } = this.props;
         if (auth.uid) return <Redirect to='/' />
         return (
-            <div className="container">
+            <main className="container">
                 <form onSubmit={this.handleSubmit} className="signin">
                     <h1 className="center">Sign In</h1>
                     <div className="input-field">
@@ -33,13 +33,13 @@ class AdminSignIn extends Component {
                         <input  className="white-text" type="password" id="password" onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
-                        <button className="btn grey darken-2 z-depth-2 right">Sign In</button>
+                        <button type="submit" className="btn grey darken-2 z-depth-2 right">Sign In</button>
                         <div className="green-text center">
                             { authError ? <p>{authError}</p> : null}
                         </div>
                     </div>
                 </form>
-            </div>
+            </main>
         )
     }
 }

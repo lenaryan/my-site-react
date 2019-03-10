@@ -15,41 +15,41 @@ class Navbar extends Component {
     render() {
         const { auth } = this.props;
         return (
-            <div>
+            <header>
                 <nav className="nav-wrapper grey darken-3">
                     <div className="container">
                         <Link to="/" className="brand-logo">MetalWebDev</Link>
                         <a href="" data-target="mobile-menu" className="sidenav-trigger">
-                            <i className="material-icons light-green-text">menu</i>
+                            <span className="material-icons light-green-text">menu</span>
                         </a>
                         <ul className="main-nav right hide-on-med-and-down">
                             <li><NavLink to="/works">Works</NavLink></li>
                             <li><NavLink to="/blog">Blog</NavLink></li>
                             <li><NavLink to="/about-me">About Me</NavLink></li>
                             {auth.uid && <SignedInLinks />}
-                            <li><a className="btn-floating green" href="vk.com/lena_ryan"><i className="fab fa-vk"></i></a></li>
-                            <li><a className="btn-floating green" style={{margin:0}} href="www.instagram.com/russian_plazma_drink"><i className="fab fa-instagram"></i></a></li>
-                            <li><a className="btn-floating green" href="twitter.com/metalwebdev"><i className="fab fa-twitter"></i></a></li>
+                            <li><a className="btn-floating green" href="https://vk.com/lena_ryan" target="_blank"><span className="fab fa-vk"></span></a></li>
+                            <li><a className="btn-floating green" style={{margin:0}} href="https://www.instagram.com/russian_plazma_drink" target="_blank"><span className="fab fa-instagram"></span></a></li>
+                            <li><a className="btn-floating green" href="https://twitter.com/metalwebdev" target="_blank"><span className="fab fa-twitter"></span></a></li>
                         </ul>
                     </div>
-                </nav>
 
-                <ul className="sidenav grey darken-1" id="mobile-menu">
-                    <li><NavLink to="/works">Works</NavLink></li>
-                    <li><NavLink to="/blog">Blog</NavLink></li>
-                    <li><NavLink to="/about-me">About Me</NavLink></li>
-                    <SignedInLinks />
-                    <li><a className="social-mob" href="vk.com/lena_ryan">
-                            <i className="fab fa-vk light-green-text text-accent-3"></i>
-                        </a>
-                        <a className="social-mob" href="www.instagram.com/russian_plazma_drink">
-                            <i className="fab fa-instagram light-green-text text-accent-3"></i>
-                        </a>
-                        <a className="social-mob" href="twitter.com/metalwebdev">
-                            <i className="fab fa-twitter light-green-text text-accent-3"></i>
-                        </a></li>
-                </ul>
-            </div>
+                    <ul className="sidenav grey darken-1" id="mobile-menu">
+                        <li><NavLink to="/works">Works</NavLink></li>
+                        <li><NavLink to="/blog">Blog</NavLink></li>
+                        <li><NavLink to="/about-me">About Me</NavLink></li>
+                        <SignedInLinks />
+                        <li><a className="social-mob" href="https://vk.com/lena_ryan" target="_blank">
+                                <span className="fab fa-vk light-green-text text-accent-3"></span>
+                            </a>
+                            <a className="social-mob" href="https://www.instagram.com/russian_plazma_drink" target="_blank">
+                                <span className="fab fa-instagram light-green-text text-accent-3"></span>
+                            </a>
+                            <a className="social-mob" href="https://twitter.com/metalwebdev" target="_blank">
+                                <span className="fab fa-twitter light-green-text text-accent-3"></span>
+                            </a></li>
+                    </ul>
+                </nav>
+            </header>
         )
     }
 }

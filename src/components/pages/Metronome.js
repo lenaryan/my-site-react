@@ -25,14 +25,14 @@ class Metronome extends Component {
     render() {
         const { bpm, playing } = this.state;
         return (
-            <div className="container metronome">
+            <main className="container metronome">
                 <h1 className="center">Metronome</h1>
                 <div className="bpm-slider">
                     <p className="center">{bpm} bpm</p>
                     <input type="range" min="60" max="240" value={bpm} onChange={this.handleBpmChange.bind(this)} />
-                    <button className="green white-text" onClick={this.handleClick.bind(this)}>{playing ? 'Stop' : 'Start'}</button>
+                    <button type="button" className="green white-text" onClick={this.handleClick.bind(this)}>{playing ? 'Stop' : 'Start'}</button>
                 </div>
-            </div>
+            </main>
         )
     }
 }

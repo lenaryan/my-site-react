@@ -3,14 +3,14 @@ import React, {Component} from 'react';
 class Home extends Component {
     render() {
         return (
-            <div className="container home valign-wrapper">
+            <main className="container home valign-wrapper">
                 <h1 className="center">Lena Ryan</h1>
-                <h4 className="center">
+                <h2 className="center">
                     <span className="light-green-text text-accent-1">Frontend </span>
                     <span className="light-green-text text-accent-2">web </span>
                     <span className="light-green-text text-accent-3">dev & </span>
-                    <span className="light-green-text text-accent-4">musician</span></h4>
-            </div>
+                    <span className="light-green-text text-accent-4">musician</span></h2>
+            </main>
         )
     }
 }
