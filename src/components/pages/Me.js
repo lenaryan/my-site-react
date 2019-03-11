@@ -12,7 +12,7 @@ const Me = () => {
                 <p>I want to become a frontend React dev so I learn React in my spare time.</p>
                 <p>Also I:</p>
                 <ul>
-                    <li><span class="material-icons light-green-text text-accent-2 left">arrow_forward</span>create CSS-images and stuff on Codepen as <a href="https://codepen.io/lenaryan/" target="_blank" className="light-green-text text-accent-2">Lena Ryan</a></li>
+                    <li><span class="material-icons light-green-text text-accent-2 left">arrow_forward</span>create CSS-images and stuff on Codepen as <a href="https://codepen.io/lenaryan/" target="_blank" rel="noopener noreferrer" className="light-green-text text-accent-2">Lena Ryan</a></li>
                     <li><span class="material-icons light-green-text text-accent-2 left">arrow_forward</span>can speak Polish (had been living in Warsaw for 15 months)</li>
                     <li><span class="material-icons light-green-text text-accent-2 left">arrow_forward</span>squat 12x35kg (the number is growing)</li>
                     <li><span class="material-icons light-green-text text-accent-2 left">arrow_forward</span>play guitar, drums and growl like a male death metal vocalist</li>
