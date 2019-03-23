@@ -9,7 +9,7 @@ const ReactWorks = () => {
                 <li><span class="material-icons light-green-text text-accent-2 left">arrow_forward</span><a target="_blank" href="https://codepen.io/lenaryan/pen/BJJOyq" rel="noopener noreferrer">Calculator (Codepen)</a></li>
                 <li><span class="material-icons light-green-text text-accent-2 left">arrow_forward</span><a target="_blank" href="https://codepen.io/lenaryan/pen/jQOoGE" rel="noopener noreferrer">Pomodoro timer (Codepen)</a></li>
                 <li><span class="material-icons light-green-text text-accent-2 left">arrow_forward</span><a target="_blank" href="https://codepen.io/lenaryan/pen/KJyMWQ" rel="noopener noreferrer">Switching color schemes (Codepen)</a></li>
-                <li><span class="material-icons light-green-text text-accent-2 left">arrow_forward</span><a href="/works/metronome">Metronome</a></li>
+                <li><span class="material-icons light-green-text text-accent-2 left">arrow_forward</span><a href="/works/metronome">Metronome (with the help of https://daveceddia.com)</a></li>
             </ul>
         </>
     )
